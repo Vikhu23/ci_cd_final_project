@@ -7,7 +7,7 @@ services:
       - .:/usr/src/app
     command: go run cmd/main.go
   db:
-    image: sqlite:alpine
+    image: alpine/sqlite:latest
     ports:
       - "5432:5432"
     volumes:
