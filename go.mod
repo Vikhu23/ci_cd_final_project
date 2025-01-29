@@ -1,4 +1,4 @@
-module main
+module github.com/Vikhu23/ci_cd_final_project
 
 go 1.23.2
 
