@@ -32,8 +32,6 @@ jobs:
       - uses: actions/setup-go@v4
       - uses: golangci/golangci-lint-action@v3
 
-      - name: Test and Lint
-
   deploy:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
