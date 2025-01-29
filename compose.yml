@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    command: go run cmd/main.go
+  db:
+    image: sqlite:alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - sqlite-db:/var/lib/postgresql/data
+
+volumes:
+  sqlite-db:
